@@ -36,7 +36,7 @@ const Featured = () => {
         text={`View benefits`}
         order={` order-last`}/>
 
-        <Home_grid image={image7}
+        <Home_grid image={image9}
         title={`Stay 100% compliant`}
         subtitle={`With a local team in every single country, we make sure that you and your employees stay compliant with the ever-changing laws.`}
         text1={`We monitor local law changes and communicate this with you`}
