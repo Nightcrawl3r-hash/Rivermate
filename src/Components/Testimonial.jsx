@@ -7,7 +7,7 @@ const Testimonial = () => {
       <h2 className="text-3xl font-semibold text-center text-gray-800 py-2">
         Why clients trust Rivermate
       </h2>
-      <div className="grid grid-cols-2 gap-4 ">
+      <div className="grid grid-cols-2 gap-x-16 py-6">
         <TestimonialTile
           image={image2}
           name={`Naresh Rajbanshi`}
@@ -19,9 +19,9 @@ const Testimonial = () => {
         <TestimonialTile
           image={image1}
           name={`Skah van Bijnen`}
-          position={`founder of Boloo`}
+          position={`Founder of Boloo`}
           text={`Their commitment is unmatched`}
-          description={`We needed to hire someone in India. We don't have an entity in India so the process was quite complex, we thought. We sought the help of Rivermate. Their attention to detail, swift responses, and commitment to our company's needs have been unmatched. I can't imagine expanding our global team without them.`}
+          description={`We needed to hire someone in Nepal. We don't have an entity in Nepal so the process was quite complex, we thought. We sought the help of Rivermate. Their attention to detail, swift responses, and commitment to our company's needs have been unmatched. I can't imagine expanding our global team without them.`}
         />
       </div>
     </div>
@@ -30,12 +30,12 @@ const Testimonial = () => {
 
 function TestimonialTile({ text, description, name, position, image }) {
   return (
-    <div className="">
-      <h2 className="">{text}</h2>
-      <p className="">{description}</p>
-      <section className="">
-        <img src={image} alt="imageof a person" />
-        <div className="">
+    <div className="flex flex-col gap-4 bg-white p-8 rounded-xl">
+      <h2 className="text-2xl font-bold text-gray-800">{text}</h2>
+      <p className="text-gray-700 text-thin">{description}</p>
+      <section className="flex items-center  gap-2">
+        <img src={image} alt="imageof a person" className="rounded-full h-20" />
+        <div className="flex flex-col font-bold text-gray-900 tracking-wide text-md">
           <span className="">{name}</span>
           <span className="">{position}</span>
         </div>

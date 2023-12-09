@@ -6,6 +6,8 @@ import HirePay from "./Components/HirePay";
 
 import Featured from "./Components/Featured";
 import Testimonial from "./Components/Testimonial";
+import Footer from "./Components/Footer";
+import Newsletter from "./Components/Newsletter";
 const App = () => {
   return (
     <div className="bg-[#fff5ed]">
@@ -15,6 +17,8 @@ const App = () => {
       <HirePay />
       <Featured />
       <Testimonial/>
+      <Newsletter/>
+      <Footer/>
     </div>
   );
 };
