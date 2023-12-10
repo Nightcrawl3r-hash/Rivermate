@@ -16,7 +16,7 @@ const Home_grid = ({
     <div className="">
       <div className="grid md:grid-cols-2 gap-4   ">
         <div className={`  ${order}`}>
-          <img src={image} alt="image" className="rounded-lg h-4/5 " />
+          <img src={image} alt="image" className="rounded-lg h-4/5 w-full" />
         </div>
         <div className="py-2 ">
           <div className="flex flex-col gap-2">
