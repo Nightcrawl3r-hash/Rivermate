@@ -13,7 +13,7 @@ import image16 from "../assets/6.webp";
 const Partners = () => {
   return (
     <div className="container m-auto">
-      <div className="grid grid-cols-2 gap-8 items-center justify-center py-16">
+      <div className="grid grid-cols-2 gap-8 items-center justify-center py-16 h-screen">
         <div className="">
           <h1 className="text-6xl font-extrabold text-gray-800 pb-4">
             Do you offer Employer of Record services in your country? Partner up

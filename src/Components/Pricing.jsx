@@ -8,7 +8,7 @@ import FAQ from "./FAQ";
 const Pricing = () => {
   return (
     <div className="container m-auto pt-20">
-      <h1 className=" text-6xl font-extrabold text-gray-800 text-center">
+      <h1 className=" text-6xl font-extrabold text-gray-800 text-center pt-20">
         Pricing finally done right
       </h1>
 

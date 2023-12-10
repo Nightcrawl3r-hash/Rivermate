@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Components/Home";
 import HowitWorks from "./Components/HowitWorks";
 import Pricing from "./Components/Pricing";
-import Countries from "./Components/Countries";
+import Manifesto from './Components/Manifesto'
 import Partners from "./Components/Partners";
 import Company from "./Components/Company";
 const App = () => {
@@ -17,7 +17,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/HowitWorks" element={<HowitWorks />} />
           <Route path="/pricing" element={<Pricing />} />
-          <Route path="/countries" element={<Countries />} />
+          <Route path="/manifesto" element={<Manifesto/>} />
           <Route path="/partners" element={<Partners />} />
           <Route path="/company" element={<Company />} />
         </Routes>

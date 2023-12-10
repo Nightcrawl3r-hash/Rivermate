@@ -5,7 +5,7 @@ import Button from "./Button";
 import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
-    <div className=" py-6 px-8 z-30 bg-transparent ">
+    <div className=" py-6 bg-white drop-shadow-xl px-8 z-30 bg-transparent fixed w-full">
       <div className="grid grid-cols-2 gap-4 ">
         <div className="flex items-center">
           <div className="flex justify-center items-center">
@@ -14,7 +14,7 @@ const Navbar = () => {
           <div className="flex justify-center items-center gap-4   cursor-pointer text-gray-800 font-medium ">
             <NavLink to='HowitWorks' className="">How it works</NavLink>
             <NavLink to='pricing' className="">Pricing</NavLink>
-            <NavLink to='countries' className="">Countries</NavLink>
+            <NavLink to='manifesto' className="">Manifesto</NavLink>
             <NavLink to='partners' className="">Partners</NavLink>
             <NavLink to='company' className="">Company</NavLink>
           </div>
