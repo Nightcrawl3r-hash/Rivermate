@@ -5,8 +5,8 @@ import { FaLinkedin, FaTwitter } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="bg-gray-950 rounded-t-xl  container m-auto  mt-12 justify-center">
-      <div className="grid grid-cols-5 gap-4 text-gray-300 p-16 ">
-        <div className="flex  flex-col gap-y-6">
+      <div className="grid grid-cols-4  lg:grid-cols-5 gap-4 text-gray-300 p-16 ">
+        <div className="flex md:col-span-4 lg:col-span-1 md:items-center lg:items-start  flex-col gap-y-6">
           <Logo />
           <h2 className="text-gray-400">
             We will help you hire anyone, anywhere

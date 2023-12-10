@@ -10,7 +10,7 @@ const Company = () => {
     <div className="container m-auto pt-16">
       <div className="flex flex-col justify-center items-center py-16">
         <img src={image1} alt="image" />
-        <h1 className="text-6xl w-1/2 text-center font-extrabold text-gray-800 ">
+        <h1 className=" text-5xl md:text-6xl lg:w-1/2 text-center font-extrabold text-gray-800 ">
           Our mission is to enable companies to hire anyone, anywhere
         </h1>
       </div>
@@ -30,7 +30,7 @@ function Founder() {
         alt="image"
         className="rounded-full h-72 drop-shadow-2xl"
       />
-      <p className="w-1/2 text-center text-gray-700 font-extralight">
+      <p className="md:w-1/2 text-center text-gray-700 font-extralight">
         Before founding Rivermate, Naresh co-founded a remote company called
         Boloo. He experienced first-hand the troubles of hiring remote employees
         compliantly. During the COVID-19 pandemic he witnessed many companies
@@ -49,7 +49,7 @@ function WhatWeValue() {
       <h2 className=" text-center text-5xl font-extrabold text-gray-800">
         What we value
       </h2>
-      <div className="grid grid-cols-3 gap-2 py-4 ">
+      <div className="grid md:grid-cols-3 gap-2 py-4 ">
         <div className="flex flex-col gap-4 justify-center items-center">
           <Text
             title={`Speed`}
@@ -60,9 +60,11 @@ function WhatWeValue() {
             subtitle={`We want to be the cheapest in the market. We can achieve that by keeping the team small and agile, automating the entire process and opening entities ourselves.`}
           />
         </div>
-        <img src={image3} alt="image" />
+        <div className="flex items-center order-first md:order-2">
+          <img src={image3} alt="image" className=""/>
+        </div>
 
-        <div className="flex flex-col gap-4 justify-center items-center">
+        <div className="flex flex-col gap-4 justify-center items-center order-last">
           <Text
             title={`Convenience`}
             subtitle={`The product needs to be extremely straightforward. A user would not need customer support in order to onboard them`}
@@ -79,7 +81,7 @@ function WhatWeValue() {
 
 function Text({ title, subtitle }) {
   return (
-    <div className="p-4">
+    <div className=" lg:p-4 ">
       <h1 className="flex gap-1 items-center text-xl text-gray-800 font-bold">
         <span className="">
           <TiTick size={24} />

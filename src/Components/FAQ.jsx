@@ -25,7 +25,7 @@ const FAQ = () => {
         {[1, 2, 3, 4].map((dropdownNumber) => (
           <div
             key={dropdownNumber}
-            className="bg-white p-8 cursor-pointer hover:bg-[#D6CBC1] grid w-1/2 m-auto rounded-lg transition-all duration-300 ease-in"
+            className="bg-white p-8 cursor-pointer hover:bg-[#D6CBC1] grid lg:w-1/2 m-auto rounded-lg transition-all duration-300 ease-in"
           >
             <button
               className="flex flex-row items-center justify-between"

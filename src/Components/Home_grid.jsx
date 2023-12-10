@@ -14,7 +14,7 @@ const Home_grid = ({
 }) => {
   return (
     <div className="">
-      <div className="grid grid-cols-2 gap-4   ">
+      <div className="grid md:grid-cols-2 gap-4   ">
         <div className={`  ${order}`}>
           <img src={image} alt="image" className="rounded-lg h-4/5 " />
         </div>

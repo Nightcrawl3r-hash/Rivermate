@@ -12,9 +12,9 @@ import image34 from '../assets/34.webp'
 import image35 from '../assets/35.webp'
 const HowitWorks = () => {
   return (
-    <div className="container m-auto pt-16">
-      <div className="grid grid-cols-2 gap-4 justify-center items-center h-screen px-12">
-        <div className="">
+    <div className="container m-auto pt-16 px-2 lg:px-0">
+      <div className="grid md:grid-cols-2 gap-4 justify-center items-center h-screen md:px-12">
+        <div className="order-last md:order-first">
           <h1 className="text-6xl font-extrabold text-gray-800 py-2 ">Offer the benefits your team deserves</h1>
           <p className="text-gray-700 font-extralight py-2 ">
             Pensions, health insurance, statutory benefits. In every country in
@@ -28,7 +28,7 @@ const HowitWorks = () => {
         <img src={image21} alt="image" />
       </div>
 
-      <div className="grid grid-cols-4 gap-4 py-8 ">
+      <div className="grid  md:grid-cols-2 lg:grid-cols-4 gap-4 py-8 ">
         <Tile image={image30} title={`Statuory benefits`} subtitle={`We take care of the statutory benefits that are required by law for all your employees hired by us.
 `}/>
         <Tile image={image31} title={`Custom benefits`} subtitle={` We can offer your employees  benefits & perks, depending on the country they are in.
@@ -50,7 +50,7 @@ function LearnMore(){
       <h2 className="text-3xl text-gray-800 font-semibold text-center pb-6">
         Learn more about Rivermate
       </h2>
-      <div className="grid grid-cols-3 gap-8 py-4">
+      <div className="grid md:grid-cols-3 gap-8 py-4">
         <LearnMoreTile
           image={image34}
           title={`Manage your team`}

@@ -7,12 +7,12 @@ import FAQ from "./FAQ";
 
 const Pricing = () => {
   return (
-    <div className="container m-auto pt-20">
+    <div className="container m-auto pt-20 px-2 lg:p-0">
       <h1 className=" text-6xl font-extrabold text-gray-800 text-center pt-20">
         Pricing finally done right
       </h1>
 
-      <p className="text-lg font-extralight px-60 text-center pt-4">
+      <p className="text-lg font-extralight lg:px-60 text-center pt-4">
         Our billing is monthly and you will only be charged a flat rate once you
         have added a new employee. No minimum costs, no contracts, no hidden
         costs. Just simple, transparent pricing.
@@ -21,7 +21,7 @@ const Pricing = () => {
       <h2 className=" text-xl text-center font-bold text-gray-800 ">
         Cancel anytime
       </h2>
-      <div className="grid grid-cols-2 gap-x-16 py-8">
+      <div className="grid md:grid-cols-2  gap-x-4 lg:gap-x-16 py-8">
         <div className="bg-white p-8 rounded-2xl ">
           <PricingTile
             title={`Hire remote employees`}

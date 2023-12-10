@@ -3,25 +3,25 @@ import Newsletter from "./Newsletter";
 import image20 from "../assets/20.webp";
 const Manifesto = () => {
   return (
-    <div className="container m-auto pt-16">
+    <div className="container m-auto pt-16 px-2 lg:px-0">
       <div className="flex flex-col justify-center items-center py-16 ">
         <img src={image20} alt="image" />
-        <h1 className="text-6xl w-1/2 text-center font-extrabold text-gray-800 ">
+        <h1 className="text-6xl lg:w-1/2 text-center font-extrabold text-gray-800 ">
           Enable companies to hire anyone, anywhere
         </h1>
       </div>
       <section className="text-center flex flex-col gap-y-4 justify-center items-center py-4">
         <h2 className="text-3xl font-extrabold text-gray-800">The problem</h2>
-        <p className="w-1/2  text-gay-700 font-extralight">
+        <p className="lg:w-1/2  text-gay-700 font-extralight">
           Remote working is becoming the standard and this allows companies to
           attract talent from all around the globe.
         </p>
-        <p className="w-1/2  text-gay-700 font-extralight">
+        <p className="lg:w-1/2  text-gay-700 font-extralight">
           However hiring remote employees comes is extremely complex. Think
           about payroll, benefits, compliance, local taxes, which is different
           in every country.
         </p>
-        <p className="w-1/2  text-gay-700 font-extralight">
+        <p className="lg:w-1/2  text-gay-700 font-extralight">
           There is no one service that solves everything. The market is
           fragmented and in order to employ employees in more than one country,
           you would need to work with multiple vendors.
@@ -30,7 +30,7 @@ const Manifesto = () => {
 
       <section className="text-center flex flex-col gap-y-4 justify-center items-center py-4 ">
         <h2 className="text-3xl font-extrabold text-gray-800">The options</h2>
-        <p className="w-1/2  text-gay-700 font-extralight">
+        <p className="lg:w-1/2  text-gay-700 font-extralight">
           There are three options to solve this problem. One of them is the
           best.
         </p>
@@ -54,17 +54,17 @@ const Manifesto = () => {
 
       <section className="text-center flex flex-col gap-y-4 justify-center items-center py-4">
         <h2 className="text-3xl font-extrabold text-gray-800">The solution</h2>
-        <p className="text-gray-700 font-extralight w-1/2">
+        <p className="text-gray-700 font-extralight lg:w-1/2">
           The last Employer of Record service is what most companies would want
           to use.
         </p>
-        <p className="text-gray-700 font-extralight w-1/2">
+        <p className="text-gray-700 font-extralight lg:w-1/2">
           And that's where Rivermate comes in. We offer Employer of Record
           services in 150 countries. By working together with local payroll
           partners, we leverage their local expertise, without having to hire
           hundreds of employees to keep up with local regulations.
         </p>
-        <p className="text-gray-700 font-extralight w-1/2">
+        <p className="text-gray-700 font-extralight lg:w-1/2">
           That means we can offer competitive pricing, while offering superior
           expertise in every corner of the world.
         </p>
@@ -79,7 +79,7 @@ function Usable({ title, subtitle }) {
     <>
       <div className="flex flex-col items-center">
         <h2 className=" text-xl font-semibold text-gray-800">{title}</h2>
-        <p className="text-gray-700 font-extralight w-1/2">{subtitle}</p>
+        <p className="text-gray-700 font-extralight lg:w-1/2">{subtitle}</p>
       </div>
     </>
   );

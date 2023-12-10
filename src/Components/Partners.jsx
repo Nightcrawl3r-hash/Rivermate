@@ -12,10 +12,10 @@ import image15 from "../assets/15.webp";
 import image16 from "../assets/6.webp";
 const Partners = () => {
   return (
-    <div className="container m-auto">
-      <div className="grid grid-cols-2 gap-8 items-center justify-center py-16 h-screen">
+    <div className="container m-auto px-2 lg:px-0">
+      <div className="grid lg:grid-cols-2 lg:gap-8 items-center justify-center py-16 h-screen">
         <div className="">
-          <h1 className="text-6xl font-extrabold text-gray-800 pb-4">
+          <h1 className=" text-5xl md:text-6xl font-extrabold text-gray-800 pb-4">
             Do you offer Employer of Record services in your country? Partner up
             with us.
           </h1>
@@ -26,11 +26,11 @@ const Partners = () => {
           </p>
           <Button text={`Talk to us`} />
         </div>
-        <div className="">
-          <img src={image1} alt="image" />
+        <div className="order-first lg:order-last">
+          <img src={image1} alt="image" className="md:p-6 lg:p-0" />
         </div>
       </div>
-      <div className=" grid grid-cols-4 gap-4 my-8">
+      <div className=" grid md:grid-cols-2 lg:grid-cols-4 gap-4 my-8">
         <Tile
           image={image5}
           title={`Free sales channel`}
@@ -57,7 +57,6 @@ const Partners = () => {
           image={image16}
           title={`Are you a fit?`}
           description={`We offer Employer of Record services, payroll services and work permits in 150 countries. We do this through a large partner network. If you offer these services in your country or multiple countries without outsourcing the service, then you are a good fit for a partnership!`}
-          
         />
         <PricingTile
           image={image14}
@@ -78,12 +77,12 @@ const Partners = () => {
 
 function PricingTile({ title, description, image,order }) {
   return (
-    <div className="grid grid-cols-2 gap-12">
+    <div className="grid md:grid-cols-2 gap-12">
       <div className="flex flex-col  justify-center">
         <h2 className="text-4xl font-semibold pb-2 text-gray-800">{title}</h2>
         <p className="text-xl font-extralight text-gray-700">{description}</p>
       </div>
-      <div className={`${order}`}>
+      <div className={` ${order}`}>
         <img src={image} alt="image" className="rounded-xl  w-full" />
       </div>
     </div>

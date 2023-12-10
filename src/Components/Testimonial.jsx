@@ -7,7 +7,7 @@ const Testimonial = () => {
       <h2 className="text-3xl font-semibold text-center text-gray-800 py-2">
         Why clients trust Rivermate
       </h2>
-      <div className="grid grid-cols-2 gap-x-16 py-6">
+      <div className="grid md:grid-cols-2 gap-2 gap-x-4 lg:gap-x-16 py-6">
         <TestimonialTile
           image={image2}
           name={`Naresh Rajbanshi`}

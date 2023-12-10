@@ -10,7 +10,7 @@ const HirePay = () => {
       <h2 className="text-3xl text-gray-800 font-semibold text-center pb-6">
         Hire, pay and manage your global team
       </h2>
-      <div className="grid grid-cols-4 gap-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         <Tile
           image={image1}
           title={`Hire global employees`}

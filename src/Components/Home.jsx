@@ -7,7 +7,7 @@ import Testimonial from './Testimonial'
 import Newsletter from './Newsletter'
 const Home = () => {
   return (
-    <div>
+    <div className="px-2 lg:px-0">
       <Hero/>
       <Trusted />
       <HirePay />
