@@ -15,7 +15,7 @@ const Partners = () => {
     <div className="container m-auto px-2 lg:px-0">
       <div className="grid lg:grid-cols-2 lg:gap-8 items-center justify-center py-16 h-screen">
         <div className="overflow-hidden">
-          <h1 data-aos="zoom-in-up" className=" text-5xl md:text-6xl font-extrabold text-gray-800 pb-4">
+          <h1 data-aos="zoom-in-up" className=" text-4xl md:text-6xl font-extrabold text-gray-800 pb-4">
             Do you offer Employer of Record services in your country? Partner up
             with us.
           </h1>
