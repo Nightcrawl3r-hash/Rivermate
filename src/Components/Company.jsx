@@ -7,10 +7,10 @@ import image3 from "../assets/20.webp";
 import { TiTick } from "react-icons/ti";
 const Company = () => {
   return (
-    <div className="container m-auto pt-16">
+    <div className=" overflow-hidden container m-auto pt-16">
       <div className="flex flex-col justify-center items-center py-16">
-        <img src={image1} alt="image" />
-        <h1 className=" text-5xl md:text-6xl lg:w-1/2 text-center font-extrabold text-gray-800 ">
+        <img data-aos="zoom-in" src={image1} alt="image" />
+        <h1 data-aos="fade-up" className=" text-5xl md:text-6xl lg:w-1/2 text-center font-extrabold text-gray-800 ">
           Our mission is to enable companies to hire anyone, anywhere
         </h1>
       </div>
@@ -24,13 +24,14 @@ const Company = () => {
 function Founder() {
   return (
     <div className="flex flex-col gap-y-6 justify-center items-center py-16">
-      <h2 className="text-5xl font-extrabold text-gray-800">The Founder</h2>
+      <h2 data-aos="fade-up" className="text-5xl font-extrabold text-gray-800">The Founder</h2>
       <img
+        data-aos="flip-down"
         src={image2}
         alt="image"
         className="rounded-full h-72 drop-shadow-2xl"
       />
-      <p className="md:w-1/2 text-center text-gray-700 font-extralight">
+      <p data-aos="zoom-in-up" className="md:w-1/2 text-center text-gray-700 font-extralight">
         Before founding Rivermate, Naresh co-founded a remote company called
         Boloo. He experienced first-hand the troubles of hiring remote employees
         compliantly. During the COVID-19 pandemic he witnessed many companies
@@ -38,7 +39,8 @@ function Founder() {
         he decided to sell his company and focus on fixing the problem with
         remote hiring.
       </p>
-      <img src={signature} alt="image" className="" />
+      <img data-aos="fade-up"
+     data-aos-duration="3000" src={signature} alt="image" className="" />
     </div>
   );
 }
@@ -46,7 +48,7 @@ function Founder() {
 function WhatWeValue() {
   return (
     <div className="py-16 ">
-      <h2 className=" text-center text-5xl font-extrabold text-gray-800">
+      <h2 data-aos="fade-up" className=" text-center text-5xl font-extrabold text-gray-800">
         What we value
       </h2>
       <div className="grid md:grid-cols-3 gap-2 py-4 ">
@@ -60,8 +62,8 @@ function WhatWeValue() {
             subtitle={`We want to be the cheapest in the market. We can achieve that by keeping the team small and agile, automating the entire process and opening entities ourselves.`}
           />
         </div>
-        <div className="flex items-center order-first md:order-2">
-          <img src={image3} alt="image" className=""/>
+        <div  className="flex items-center order-first md:order-2">
+          <img data-aos="zoom-in" src={image3} alt="image" className=""/>
         </div>
 
         <div className="flex flex-col gap-4 justify-center items-center order-last">
@@ -81,7 +83,7 @@ function WhatWeValue() {
 
 function Text({ title, subtitle }) {
   return (
-    <div className=" lg:p-4 ">
+    <div data-aos="flip-left" className=" lg:p-4 ">
       <h1 className="flex gap-1 items-center text-xl text-gray-800 font-bold">
         <span className="">
           <TiTick size={24} />

@@ -7,18 +7,18 @@ import FAQ from "./FAQ";
 
 const Pricing = () => {
   return (
-    <div className="container m-auto pt-20 px-2 lg:p-0">
-      <h1 className=" text-6xl font-extrabold text-gray-800 text-center pt-20">
+    <div className=" overflow-hidden container m-auto pt-20 px-2 lg:p-0">
+      <h1 data-aos="fade-down" className=" text-6xl font-extrabold text-gray-800 text-center pt-20">
         Pricing finally done right
       </h1>
 
-      <p className="text-lg font-extralight lg:px-60 text-center pt-4">
+      <p data-aos="flip-down" className="text-lg font-extralight lg:px-60 text-center pt-4">
         Our billing is monthly and you will only be charged a flat rate once you
         have added a new employee. No minimum costs, no contracts, no hidden
         costs. Just simple, transparent pricing.
       </p>
 
-      <h2 className=" text-xl text-center font-bold text-gray-800 ">
+      <h2 data-aos="fade-down" className=" text-xl text-center font-bold text-gray-800 ">
         Cancel anytime
       </h2>
       <div className="grid md:grid-cols-2  gap-x-4 lg:gap-x-16 py-8">
@@ -69,7 +69,7 @@ const Pricing = () => {
         </div>
       </div>
       <section className="flex flex-col gap-y-8 py-8">
-        <div className="bg-white p-6 rounded-2xl">
+        <div data-aos="fade-right" className="bg-white p-6 rounded-2xl">
           <FullTile
             title={`Global health insurance`}
             subtitle={`From €70 to €840 per employee per month`}
@@ -86,7 +86,7 @@ const Pricing = () => {
             <TickText text1={`Family members`} />
           </div>
         </div>
-        <div className="bg-white p-6 rounded-2xl">
+        <div data-aos="fade-right" className="bg-white p-6 rounded-2xl">
           <FullTile
             title={`Visa & mobility sponsorship`}
             subtitle={`€2500 per visa`}
@@ -106,7 +106,7 @@ const Pricing = () => {
 
 function FullTile({ title, subtitle, description }) {
   return (
-    <div className="flex flex-col gap-y-2 py-2">
+    <div  className="flex flex-col gap-y-2 py-2">
       <p className="text-3xl font-extrabold text-gray-800">{title}</p>
       <h2 className="font-semibold text-gray-800">{subtitle}</h2>
       <h3 className="text-gray-800 font-extralight">{description}</h3>

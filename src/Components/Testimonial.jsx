@@ -3,8 +3,8 @@ import image1 from "../assets/1.jpeg";
 import image2 from "../assets/1.jpg";
 const Testimonial = () => {
   return (
-    <div className="container m-auto py-16 ">
-      <h2 className="text-3xl font-semibold text-center text-gray-800 py-2">
+    <div className="container overflow-hidden m-auto py-16 ">
+      <h2 data-aos="fade-up" className="text-3xl font-semibold text-center text-gray-800 py-2">
         Why clients trust Rivermate
       </h2>
       <div className="grid md:grid-cols-2 gap-2 gap-x-4 lg:gap-x-16 py-6">
@@ -30,7 +30,7 @@ const Testimonial = () => {
 
 function TestimonialTile({ text, description, name, position, image }) {
   return (
-    <div className="flex flex-col gap-4 bg-white p-8 rounded-xl">
+    <div data-aos="flip-up" className="flex flex-col gap-4 bg-white p-8 rounded-xl">
       <h2 className="text-2xl font-bold text-gray-800">{text}</h2>
       <p className="text-gray-700 text-thin">{description}</p>
       <section className="flex items-center  gap-2">

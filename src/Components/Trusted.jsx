@@ -8,11 +8,11 @@ import image6 from "../assets/6.svg";
 import image7 from '../assets/featured.svg'
 const Trusted = () => {
   return (
-    <div className="container m-auto py-12">
-      <h2 className=" text-3xl font-semibold text-center text-gray-800 py-2 ">
+    <div className="container overflow-hidden m-auto py-12">
+      <h2 data-aos="fade-up" className=" text-3xl font-semibold text-center text-gray-800 py-2 ">
         Trusted by many
       </h2>
-      <div className="grid grid-cols-6 gap-6 items-center  justify-center py-4">
+      <div data-aos="flip-up" className="grid grid-cols-6 gap-6 items-center  justify-center py-4">
         <img src={image1} alt="company-image"  />
         <img src={image2} alt="company-image" />
         <img src={image3} alt="company-image" />
@@ -20,7 +20,7 @@ const Trusted = () => {
         <img src={image5} alt="company-image" />
         <img src={image6} alt="company-image" />
       </div>
-      <div className="flex justify-center items-center py-4">
+      <div data-aos="zoom-out" className="flex justify-center items-center py-4">
         <img src={image7} alt="image" />
       </div>
     </div>

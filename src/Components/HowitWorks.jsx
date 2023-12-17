@@ -12,11 +12,11 @@ import image34 from '../assets/34.webp'
 import image35 from '../assets/35.webp'
 const HowitWorks = () => {
   return (
-    <div className="container m-auto pt-16 px-2 lg:px-0">
+    <div className=" overflow-hidden container m-auto pt-16 px-2 lg:px-0">
       <div className="grid md:grid-cols-2 gap-4 justify-center items-center h-screen md:px-12">
         <div className="order-last md:order-first">
-          <h1 className="text-6xl font-extrabold text-gray-800 py-2 ">Offer the benefits your team deserves</h1>
-          <p className="text-gray-700 font-extralight py-2 ">
+          <h1 data-aos="fade-up" className="text-6xl font-extrabold text-gray-800 py-2 ">Offer the benefits your team deserves</h1>
+          <p data-aos="fade-up" className="text-gray-700 font-extralight py-2 ">
             Pensions, health insurance, statutory benefits. In every country in
             the world - all at affordable rates.
           </p>
@@ -25,7 +25,7 @@ const HowitWorks = () => {
             <BookDemo/>
           </div>
         </div>
-        <img src={image21} alt="image" />
+        <img data-aos="zoom-in" src={image21} alt="image" />
       </div>
 
       <div className="grid  md:grid-cols-2 lg:grid-cols-4 gap-4 py-8 ">
@@ -47,7 +47,7 @@ const HowitWorks = () => {
 function LearnMore(){
   return (
     <div className="py-8">
-      <h2 className="text-3xl text-gray-800 font-semibold text-center pb-6">
+      <h2 data-aos="flip-up" className="text-3xl text-gray-800 font-semibold text-center pb-6">
         Learn more about Rivermate
       </h2>
       <div className="grid md:grid-cols-3 gap-8 py-4">
@@ -76,7 +76,7 @@ function LearnMore(){
 
 function LearnMoreTile({image,title,subtitle,bg}){
   return(
-    <div className="">
+    <div data-aos="zoom-in" className="">
        <div className={`flex flex-col gap-2 items-center   p-6 rounded-lg cursor-pointer `} style={{backgroundColor:`#${bg}`}}>
         <img src={image} alt="image" className="h-16" />
         <h2 className="text-xl font-bold text-gray-700">{title}</h2>

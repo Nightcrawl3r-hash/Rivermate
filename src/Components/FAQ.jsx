@@ -10,7 +10,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="container m-auto py-16">
+    <div className=" overflow-hidden container m-auto py-16">
       <h1 className="text-center text-5xl font-extrabold text-gray-800 pb-2">
         Frequently asked questions
       </h1>
@@ -50,7 +50,7 @@ const FAQ = () => {
             >
               {/* Content for the current dropdown */}
               {dropdownNumber === 1 && (
-                <p className="font-extralight text-gray-800">
+                <p data-aos="fade-down" className="font-extralight text-gray-800">
                   On the 10th of every month, we issue you with an invoice bill.
                   This includes payroll, taxes, benefits, expenses, and any
                   bonuses or commissions. Within this invoice, you will also
@@ -62,7 +62,7 @@ const FAQ = () => {
                 </p>
               )}
               {dropdownNumber === 2 && (
-                <p className="font-extralight text-gray-800">
+                <p data-aos="fade-down" className="font-extralight text-gray-800">
                   Our pricing plan is a monthly plan, which means you can
                   cancel any time. The payments will stop as soon as you
                   offboard a contractor or an employee. No minimum costs, no
@@ -71,7 +71,7 @@ const FAQ = () => {
               )}
               {dropdownNumber === 3 && (
                 <div>
-                  <p className="font-extralight text-gray-800">
+                  <p data-aos="fade-down" className="font-extralight text-gray-800">
                     An independent contractor is a worker outside of the
                     business. They are “independent” which means that they
                     could run their own businesses or do work outside your
@@ -80,12 +80,12 @@ const FAQ = () => {
                     discrete project or a set of tasks to complete with minimal
                     direct supervision.
                   </p>
-                  <p className="font-extralight text-gray-800">
+                  <p data-aos="fade-down" className="font-extralight text-gray-800">
                     An employee is employed to do any work-for-hire or reward
                     under an employment agreement. The hire or reward is almost
                     always a wage or salary.
                   </p>
-                  <ul className="text-gray-800 font-extralight">
+                  <ul data-aos="fade-down" className="text-gray-800 font-extralight">
                     <li>At least the minimum wage</li>
                     <li>Holiday and leave enlightments</li>
                     <li>An employee agreement</li>
@@ -93,7 +93,7 @@ const FAQ = () => {
                 </div>
               )}
               {dropdownNumber === 4 && (
-                <p className="font-extralight text-gray-800">
+                <p data-aos="fade-down" className="font-extralight text-gray-800">
                   On the 10th of every month, we issue you with an invoice bill.
                   This includes payroll, taxes, benefits, expenses, and any
                   bonuses or commissions. Within this invoice, you will also

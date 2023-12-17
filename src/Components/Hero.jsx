@@ -6,10 +6,10 @@ import Button from "./Button";
 import BookDemo from "./BookDemo";
 const Hero = () => {
   return (
-    <div className="container m-auto flex flex-col justify-center items-center py-32">
+    <div className=" overflow-hidden container m-auto flex flex-col justify-center items-center py-32">
       <img src={image1} alt="" />
-      <h1 className="text-6xl font-extrabold text-gray-800 pb-4">Hire anyone, anywhere.</h1>
-      <h3 className="flex items-center gap-2 text-xl font-thin text-gray-800">
+      <h1 data-aos="zoom-in" className="text-6xl font-extrabold text-gray-800 pb-4">Hire anyone, anywhere.</h1>
+      <h3 data-aos="zoom-in" className="flex items-center gap-2 text-xl font-thin text-gray-800">
         The HR platform for global teams
         <span className="">
           <FaGlobeAmericas />
@@ -30,7 +30,7 @@ const Hero = () => {
 
 function TickText({ text }) {
   return (
-    <div className=" flex gap-1 items-center">
+    <div data-aos="flip-up" className=" flex gap-1 items-center">
       <TiTick  className="text-green-600 " size={16}/>
       <h3 className=" text-gray-700">{text}</h3>
     </div>

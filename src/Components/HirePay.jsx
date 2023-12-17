@@ -6,8 +6,8 @@ import image4 from "../assets/5.webp";
 import Tile from "./Tile";
 const HirePay = () => {
   return (
-    <div className="container m-auto py-16">
-      <h2 className="text-3xl text-gray-800 font-semibold text-center pb-6">
+    <div className="container overflow-hidden m-auto py-16">
+      <h2 data-aos="zoom-in" className="text-3xl text-gray-800 font-semibold text-center pb-6">
         Hire, pay and manage your global team
       </h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

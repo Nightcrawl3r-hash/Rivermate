@@ -13,9 +13,9 @@ const Home_grid = ({
   order,
 }) => {
   return (
-    <div className="">
-      <div className="grid md:grid-cols-2 gap-4   ">
-        <div className={`  ${order}`}>
+    <div className="overflow-hidden">
+      <div data-aos="fade-right" className="grid md:grid-cols-2 gap-4   ">
+        <div  className={`  ${order}`}>
           <img src={image} alt="image" className="rounded-lg h-4/5 w-full" />
         </div>
         <div className="py-2 ">

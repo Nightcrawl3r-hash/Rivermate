@@ -14,20 +14,20 @@ const Partners = () => {
   return (
     <div className="container m-auto px-2 lg:px-0">
       <div className="grid lg:grid-cols-2 lg:gap-8 items-center justify-center py-16 h-screen">
-        <div className="">
-          <h1 className=" text-5xl md:text-6xl font-extrabold text-gray-800 pb-4">
+        <div className="overflow-hidden">
+          <h1 data-aos="zoom-in-up" className=" text-5xl md:text-6xl font-extrabold text-gray-800 pb-4">
             Do you offer Employer of Record services in your country? Partner up
             with us.
           </h1>
-          <p className="text-xl font-extralight pb-4">
+          <p data-aos="fade-up" className="text-xl font-extralight pb-4">
             You offer local Employer of Record services in your country and you
             would like to get more business in? Join our preferred partner
             network to unlock your services to millions of employers.
           </p>
           <Button text={`Talk to us`} />
         </div>
-        <div className="order-first lg:order-last">
-          <img src={image1} alt="image" className="md:p-6 lg:p-0" />
+        <div className=" overflow-hidden order-first lg:order-last">
+          <img data-aos="zoom-in" src={image1} alt="image" className="md:p-6 lg:p-0" />
         </div>
       </div>
       <div className=" grid md:grid-cols-2 lg:grid-cols-4 gap-4 my-8">
@@ -77,7 +77,7 @@ const Partners = () => {
 
 function PricingTile({ title, description, image,order }) {
   return (
-    <div className="grid md:grid-cols-2 gap-12">
+    <div data-aos="fade-right" className="grid md:grid-cols-2 gap-12">
       <div className="flex flex-col  justify-center">
         <h2 className="text-4xl font-semibold pb-2 text-gray-800">{title}</h2>
         <p className="text-xl font-extralight text-gray-700">{description}</p>
